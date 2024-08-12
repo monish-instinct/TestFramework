@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EAD958252C6A814300088C32 /* SampleTestFramework.docc in Sources */ = {isa = PBXBuildFile; fileRef = EAD958242C6A814300088C32 /* SampleTestFramework.docc */; };
 		EAD9582B2C6A814400088C32 /* SampleTestFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD958202C6A814300088C32 /* SampleTestFramework.framework */; };
-		EAD958302C6A814400088C32 /* SampleTestFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD9582F2C6A814400088C32 /* SampleTestFrameworkTests.swift */; };
-		EAD958312C6A814400088C32 /* SampleTestFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = EAD958232C6A814300088C32 /* SampleTestFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EAD9583B2C6A829000088C32 /* SampleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD9583A2C6A829000088C32 /* SampleTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,10 +23,8 @@
 
 /* Begin PBXFileReference section */
 		EAD958202C6A814300088C32 /* SampleTestFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SampleTestFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EAD958232C6A814300088C32 /* SampleTestFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleTestFramework.h; sourceTree = "<group>"; };
-		EAD958242C6A814300088C32 /* SampleTestFramework.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SampleTestFramework.docc; sourceTree = "<group>"; };
 		EAD9582A2C6A814400088C32 /* SampleTestFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleTestFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EAD9582F2C6A814400088C32 /* SampleTestFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTestFrameworkTests.swift; sourceTree = "<group>"; };
+		EAD9583A2C6A829000088C32 /* SampleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +50,6 @@
 			isa = PBXGroup;
 			children = (
 				EAD958222C6A814300088C32 /* SampleTestFramework */,
-				EAD9582E2C6A814400088C32 /* SampleTestFrameworkTests */,
 				EAD958212C6A814300088C32 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,18 +66,9 @@
 		EAD958222C6A814300088C32 /* SampleTestFramework */ = {
 			isa = PBXGroup;
 			children = (
-				EAD958232C6A814300088C32 /* SampleTestFramework.h */,
-				EAD958242C6A814300088C32 /* SampleTestFramework.docc */,
+				EAD9583A2C6A829000088C32 /* SampleTest.swift */,
 			);
 			path = SampleTestFramework;
-			sourceTree = "<group>";
-		};
-		EAD9582E2C6A814400088C32 /* SampleTestFrameworkTests */ = {
-			isa = PBXGroup;
-			children = (
-				EAD9582F2C6A814400088C32 /* SampleTestFrameworkTests.swift */,
-			);
-			path = SampleTestFrameworkTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,7 +78,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAD958312C6A814400088C32 /* SampleTestFramework.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAD958252C6A814300088C32 /* SampleTestFramework.docc in Sources */,
+				EAD9583B2C6A829000088C32 /* SampleTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +187,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAD958302C6A814400088C32 /* SampleTestFrameworkTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +394,7 @@
 		EAD958382C6A814400088C32 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NFL27CSBWH;
@@ -425,6 +410,7 @@
 		EAD958392C6A814400088C32 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NFL27CSBWH;
